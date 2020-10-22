@@ -4,6 +4,11 @@
 Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
 */
 
+/*
+Runtime: 16 ms, faster than 89.02% of C++ online submissions for Kth Largest Element in an Array.
+Memory Usage: 10.6 MB, less than 14.41% of C++ online submissions for Kth Largest Element in an Array.
+*/
+
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k)
