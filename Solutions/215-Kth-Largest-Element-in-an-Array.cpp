@@ -13,8 +13,7 @@ class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k)
     {
-        auto temp = vector<int>(nums.size());
-        std::copy(std::begin(nums), std::end(nums), std::begin(temp));
+        auto temp = nums;
         std::sort(std::begin(temp), std::end(temp), std::greater<int>());
         return temp[k - 1];
     }
