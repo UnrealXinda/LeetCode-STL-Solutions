@@ -24,7 +24,7 @@ public:
         
         erase_if(counts, [size](const auto& p) { return p.second <= size / 3; });
         // C++20
-        //std::erase_if(counts, [size](const auto& p) { return p->second <= size / 3; });
+        //std::erase_if(counts, [size](const auto& p) { return p.second <= size / 3; });
         
         std::transform(std::begin(counts),
                        std::end(counts),
