@@ -14,8 +14,7 @@ class Solution {
 public:
     bool containsDuplicate(vector<int>& nums)
     {
-        auto temp = vector<int>(nums.size());
-        std::copy(std::begin(nums), std::end(nums), std::begin(temp));
+        auto temp = nums;
         std::sort(std::begin(temp), std::end(temp));
         return std::distance(std::end(temp), 
                              std::unique(std::begin(temp), std::end(temp))) != 0;
