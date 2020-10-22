@@ -5,6 +5,11 @@ Given an array of size n, find the majority element. The majority element is the
 You may assume that the array is non-empty and the majority element always exist in the array.
 */
 
+/*
+Runtime: 44 ms, faster than 68.23% of C++ online submissions for Majority Element.
+Memory Usage: 19.9 MB, less than 99.97% of C++ online submissions for Majority Element.
+*/
+
 class Solution {
 public:
     int majorityElement(vector<int>& nums)
