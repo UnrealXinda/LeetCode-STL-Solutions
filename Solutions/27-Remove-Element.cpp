@@ -6,6 +6,11 @@ Do not allocate extra space for another array, you must do this by modifying the
 The order of elements can be changed. It doesn't matter what you leave beyond the new length.
 */
 
+/*
+Runtime: 4 ms, faster than 64.93% of C++ online submissions for Remove Element.
+Memory Usage: 9.2 MB, less than 100.00% of C++ online submissions for Remove Element.
+*/
+
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val)
