@@ -11,7 +11,7 @@ Memory Usage: 9.5 MB, less than 100.00% of C++ online submissions for Move Zeroe
 
 class Solution {
 public:
-    int findKthLargest(vector<int>& nums, int k)
+    int moveZeroes(vector<int>& nums, int k)
     {
         std::stable_partition(nums.begin(), nums.end(), [](int n){ return n != 0; });
     }
