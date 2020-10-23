@@ -11,7 +11,7 @@ Memory Usage: 10.6 MB, less than 14.41% of C++ online submissions for Kth Larges
 
 class Solution {
 public:
-    int moveZeroes(vector<int>& nums, int k)
+    int findKthLargest(vector<int>& nums, int k)
     {
         auto temp = nums;
         std::sort(std::begin(temp), std::end(temp), std::greater<int>());
