@@ -15,7 +15,7 @@ public:
     vector<int> sortArrayByParity(vector<int>& A)
     {
         auto result = A;
-        std::partition(result.begin(), result.end(), [](int i){ return (i & 0x01) ^ 0x01; });
+        std::partition(result.begin(), result.end(), [](int i){ return !(i & 0x01); });
         return result;
     }
 };
